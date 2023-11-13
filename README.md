@@ -28,7 +28,7 @@ This mixed-methods approach provides a strategic framework for optimizing ITN de
 Contributions to this repository are welcome. Please read our `CONTRIBUTING.md` file for guidelines on how to contribute.
 
 ## License
-This project is licensed under the MIT License. See the `LICENSE` file for more details.
+This project is licensed under the `MIT License`. See the `LICENSE` file for more details.
 
 ## Contact
 For any inquiries or contributions, please contact: laurette@aims.ac.tz
