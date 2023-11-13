@@ -1,0 +1,100 @@
+﻿group ,classification ,description of settlements types ,Codes
+group three,formal ,well structured ,well structured 
+group three,formal ,good  layout ,good layout
+group three,formal ,health facilities ,hospitals 
+group three,formal ,Usually built up or govt approved areas,registered
+group three,formal ,houses that are well-built ,well structured 
+group three,formal ,facilities for medical,hospitals 
+group three,formal ,Well-planned structures. ,well structured 
+group three,formal ,Designated places as markets ,markets
+group three,formal ,commercial centers,commercial centers
+group three,formal ,well-ventilated,well-ventilated
+group three,formal ,Standardized,standardized housing 
+group three,formal ,Designated drainages,designated drainages 
+group three,formal ,Social structures are designated and functional,social amenities 
+group three,formal ,Highest income earners,high income earners 
+group three,formal ,electricity ,basic amenities
+group one,formal ,within government control regulations ,government controlled
+group one,formal ,basic amenities ,basic amenities
+group one,formal ,hospitals ,hospitals 
+group one,formal ,primary/public schools ,schools 
+group one,formal ,electricity ,basic amenities
+group one,formal ,support the government interms of developmetal structure ,government controlled
+group one,formal ,Commercial buildings,well structured 
+group one,formal ,Market,Market
+group one,formal ,Roads,basic amenities
+group one,formal ,Occupation in secondary or tertiary sectors,Occupation in secondary or tertiary sectors
+group one,formal ,Government administrative buildings,well structured 
+group one,formal ,Police stations,Police stations
+group one,formal ,Appropriately structured,well structured 
+group one,formal ,Appropriately numbered (house numbering - address),well structured 
+group one,formal ,Management buildings and organizations,good layout
+group one,formal ,Developmental structures,well structured 
+group two,formal ,Area with basic level of organization,well structured 
+group two,formal ,Basic amenities water light house structure ,basic amenities
+group two,formal ,approved government plan,well structured 
+group two,formal ,Schools,schools 
+group two,formal ,hospitals ,hospitals 
+group two,formal ,building approval ,government controlled
+group one,informal ,not numbered ,not controlled by the government
+group one,informal ,outside governement control Regulation ,not controlled by the government
+group one,informal ,no clear building plans,poorly structured 
+group one,informal ,No homogeneous,poorly structured 
+group one,informal ,no addresses ,no addresses 
+group one,informal ,disorder lay out ,poorly structured 
+group two,informal ,not officially capture in state's database,no addresses 
+group two,informal ,usually springs up as a result of migration ,unregistered buildings 
+group two,informal ,new settlements yet to be officially captured ,no addresses 
+group two,informal ,group of people coming together to start unapproved settlements,unregistered buildings 
+group two,informal ,no drainages ,no basic amenities
+group two,informal ,no social amenities ,no basic amenities
+group two,informal ,poor accomodation ,poorly structured 
+group three,informal ,not well structured ,poorly structured 
+group three,informal ,not good house layot ,poorly structured 
+group three,informal ,not health facilities ,fewer health facilities
+group three,informal ,Opposite of formal,not formal
+group three,informal ,Might not have building approvals ,unregistered buildings 
+group three,informal ,might not have social amenities,no social amenities 
+group three,informal ,Upcoming areas without the approval of the town planning authority,unregistered buildings 
+group three,informal ,Availability of electricity  ,electricity
+group three,informal ,not electricity ,no basic amenities
+group one,slum,poverty ,poverty
+group one,slum,disease rampant,disease rampant
+group one,slum,lack basic amenities,no basic amenities
+group two,slum,Down part of informal settlements,worst of the informal
+group two,slum,most people do not own properties,lack of ownership
+group two,slum,Very dirty,dirty
+group two,slum,unhealthy area ,unhealthy 
+group two,slum,no drainage/ sewer system,no basic amenities
+group two,slum,People use surrounding areas to defecate.,no basic amenities
+group two ,slum,No structures at all.,poorly structured 
+group two ,slum,health index is poor ,unhealthy 
+group two ,slum,mixed with infromal settlements ,heterogenious 
+group three ,slum,most of the settlements are makeshifts ,poorly structured 
+group three ,slum,not planned ,unregistered 
+group three ,slum,cramped in small spaces ,crowded 
+group three ,slum,lack basic amenities ,no basic amenities
+group three ,slum,within formal/informal settlement,heterogenious 
+group three ,slum,poverty ,poverty
+group three ,slum,Lack all the qualities of the formal sector and a little of informal,not formal or informal 
+group three ,slum,. A school might exist but scarcely populated and dilapidated,scarcely populated and dilapited schools 
+group three ,slum,"Ancient , not built with modern materials",Ancient buildings 
+group three ,slum,Surrounded by farms,surounded by farms 
+group three ,slum,Lowest income earners,lowest income earners 
+group three ,slum,Overcrowded urban area occupied by poor ,urban areas occupied by poor 
+group three ,slum,disease is rampant ,unhealthy 
+group one,rural,outside city borders ,outside city borders 
+group one,rural,high natural vegetation ,high natural vegetation 
+group one,rural,low spaces ,low space
+group one,rural,low population density ,low populations density
+group one,rural,reduced amenities ,no basic amenities
+group one,rural,river water as drinking source ,river water as drinking source 
+group one,rural,buildings spaced ,buildings spaced 
+group one,rural,schools not populated ,schools not populated 
+group one,rural,infrastructure debilitated ,poorly structured 
+group one,rural,periodical farmers,periodical farmers
+group one,rural,schools not populated ,schools not populated 
+group two,rural, no infrastructure,poorly structured 
+group two,rural,no social amenities ,no basic amenities
+group two,rural,majorly peasant farmers ,periodical farmers
+group two,rural,distant from metropolis ,distant from metropolis 
