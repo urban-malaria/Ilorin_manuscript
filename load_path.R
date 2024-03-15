@@ -2,13 +2,16 @@
 rm(list=ls())
 
 #directories
-Drive <- file.path(gsub("[\\]", "/", gsub("Documents", "", Sys.getenv("HOME"))))
-DriveDir <- file.path(Drive, "OneDrive - Northwestern University", "urban_malaria") 
+Drive <- file.path(gsub("[\\]", "/", gsub("Documents", "", gsub("OneDrive", "", Sys.getenv("HOME")))))
+Drive <- file.path(gsub("[//]", "/", Drive))
+DriveDir <- file.path(Drive, "Urban Malaria Proj Dropbox", "urban_malaria")
 dhsDir <- file.path(DriveDir, "data")
 oneDrive <-  file.path(DriveDir,"data","nigeria")
+IlorinDir <- file.path(oneDrive, "Ilorin")
+rasterfiles <- file.path(oneDrive, "Raster_files")
 shapefileDir <- file.path(oneDrive, "shapefiles")
 dhsdhs <- file.path(dhsDir, "DHS","Downloads")
-projectpath <- file.path(DriveDir, "projects")
+projectpath <- file.path(DriveDir, "projects", "Manuscripts", "ongoing", "Ilorin_manuscript", "plots", "R-plots")
 result_plots <- file.path(projectpath, "urban_microstratification", 
                           "Kwara-microstratification","ilorin_laurette", "final")
 input_drive <-  file.path(DriveDir,"projects/mathematical_model/simulation_output")
@@ -36,7 +39,7 @@ read_install_pacakges <- function(packages = list_of_packages
 read_install_pacakges()
 
 
-ilorin_shapefile <- sf::read_sf("./datafiles/wardlevel_shapefile/Ilorin_3LGA.shp")%>%
+ilorin_shapefile <- sf::read_sf(file.path(IlorinDir, "Ilorin_shape_files", "ward", "Ilorin_3LGA.shp"))%>%
   mutate(LGA = ifelse(LGACode == 24006,"Ilorin East",
                       ifelse(LGACode == 24007, "Ilorin South",
                              "Ilorin West")))

@@ -6,7 +6,7 @@ source("load_path.R", echo=FALSE)
 ###############################################################################################################################################################
 
 
-files_names  = list.files( "./datafiles/rasterfiles/EVI_nigeria_2020", 
+files_names  = list.files( file.path(rasterfiles, "EVI/EVI_nigeria_2020"), 
                           pattern = ".tif", full.names = TRUE)
 
 
@@ -28,19 +28,34 @@ evi_plottingdata <- ilorin_shapefile %>%
 
 
 
-ggplot(data = ilorin_shapefile) +
-  geom_sf(color = "black", fill = "white") +
-  geom_sf(data = evi_plottingdata, aes(geometry = geometry, fill = meanEVI)) +
-  scale_fill_continuous(name="enhance vegetation index", low = "#F6E0b3", high = "darkgreen") +
+p1=ggplot() +
+  geom_sf(data = evi_plottingdata, aes(geometry = geometry, fill = meanEVI), color = "white") +
+  scale_fill_continuous(name="", low = "#F6E0b3", high = "#607c3c") +
   labs(subtitle = '', fill = "", x = NULL, y = NULL) +
   map_theme() 
 
+p2 = ggplot()+
+  geom_freqpoly(data = evi_plottingdata, aes(x = meanEVI), binwidth = 0.02, color = "#607c3c", size = 1)+
+  theme_manuscript()+
+  labs(title = "Mean EVI in 2020")+
+  theme(panel.border = element_blank())+
+  scale_x_continuous(breaks = seq(0, 1, 0.25))
+
+p3 = ggplot(data = evi_plottingdata, aes(x = meanEVI))+
+              stat_ecdf(geom = "step", color = "#607c3c", size = 1)+
+              labs(title = "Mean EVI in 2020")+
+              theme_manuscript() +
+              theme(panel.border = element_blank())
+              
+
+all = ggarrange(p3, p1, heights = c(0.5, 1), ncol = 1)
+ggsave(paste0(projectpath, "/", Sys.Date(), '_EVI.pdf'), all, width =5, height =4)
 
 ###############################################################################################################################################################
 # Settlement Type Analysis
 ###############################################################################################################################################################
 
-setlement_tpye = sf::st_read("./datafiles/rasterfiles/settlement_type/Nigeria_Blocks_V1.shp") %>% 
+setlement_tpye = sf::st_read(file.path(rasterfiles,"nigeria_settlement_classification","blocks_V1.1", "Nigeria_Blocks_V1.shp")) %>% 
   filter(state == 'Kwara', landuse =='Residential')
 
 
@@ -107,19 +122,36 @@ plotting_v2 <- sf::st_transform(plotting_v2,
                                 crs = sf::st_crs(ilorin_shapefile))
 
 
-ggplot(data = ilorin_shapefile)+
-  geom_sf(color = "black", fill = "white")+
+p1=ggplot()+
   geom_sf(data = plotting_v2 %>% filter(grp == "Poor"), 
-          aes(geometry = geometry, fill = proportion_settlement_type_grp))+
-  scale_fill_continuous( name="settlement type", low = "#F6E0b3", high = "#A97263")+
+          aes(geometry = geometry, fill = proportion_settlement_type_grp), color = "white")+
+  scale_fill_continuous( name="settlement type", low = "#F6E0b3", high = "#999abe")+
   labs(subtitle='', fill = "", y = "", x = "")+
   map_theme()
+
+p2 = ggplot()+
+  geom_freqpoly(data =  plotting_v2 %>% filter(grp == "Poor"), aes(x = proportion_settlement_type_grp), binwidth = 0.03, color = "#999abe", size = 1)+
+  theme_manuscript()+
+  labs(title = "Proportion of poor settlement type", x = NULL)+
+  theme(panel.border = element_blank())
+
+
+p3 = ggplot(data =  plotting_v2 %>% filter(grp == "Poor"), aes(x = proportion_settlement_type_grp))+
+  stat_ecdf(geom = "step", color = "#999abe", size = 1)+
+  labs(title = "Proportion of poor settlement type", x = NULL)+
+  theme_manuscript() +
+  theme(panel.border = element_blank())
+
+
+
+all = ggarrange(p3, p1, heights = c(0.5, 1), ncol = 1)
+ggsave(paste0(projectpath, "/", Sys.Date(), '_settle_poor.pdf'), all, width =5, height =4)
 
 ###############################################################################################################################################################
 # Distance to Water Bodies Analysis
 ###############################################################################################################################################################
 
-ilorin_raster_wb <- raster::raster("./datafiles/rasterfiles/distance_to_water.tif")
+ilorin_raster_wb <- raster::raster(file.path(rasterfiles,"distance_to_water_bodies", "distance_to_water.tif"))
 
 
 water_bodies<- raster::extract(ilorin_raster_wb, 
@@ -132,11 +164,25 @@ distance <- water_bodies$distance_to_water
 distance_water = cbind(ilorin_shapefile, distance) 
 
 
-ggplot(data = ilorin_shapefile)+
-  geom_sf(color = "black", fill = "white")+
-  geom_sf(data = distance_water, aes(geometry = geometry, fill = distance))+
-  scale_fill_continuous( name="settlement type", low = "midnightblue", high = "skyblue")+
-  # color_scale + 
+p1=ggplot()+
+  geom_sf(data = distance_water, aes(geometry = geometry, fill = distance), color = "white")+
+  scale_fill_continuous( name="settlement type", low = "#316cb3", high = "#d1eaf6" )+
   labs(subtitle='', title='', x = "", y = "", fill = "")+
   map_theme()
 
+p2 = ggplot()+
+  geom_freqpoly(data =  distance_water, aes(x = distance), binwidth = 300, color = "#316cb3", size = 1)+
+  theme_manuscript()+
+  labs(title = "Distance to water bodies in meters", x = NULL)+
+  theme(panel.border = element_blank())
+
+
+p3 = ggplot(data =  distance_water, aes(x = distance))+
+  stat_ecdf(geom = "step", color = "#316cb3", size = 1)+
+  labs(title = "Distance to water bodies in meters", x = NULL)+
+  theme_manuscript() +
+  theme(panel.border = element_blank())
+
+
+all = ggarrange(p3, p1, heights = c(0.5, 1), ncol = 1)
+ggsave(paste0(projectpath, "/", Sys.Date(), '_distance_water.pdf'), all, width =5, height =4)

@@ -7,7 +7,7 @@ source("load_path.R")
 palettes <- list(rev(RColorBrewer::brewer.pal(4, "RdYlBu")))
 
 # Sample text data (you can replace this with your own text)
-text_data <- read.csv("./datafiles/ilorin_cluster_classification.csv") %>% 
+text_data <- read.csv("./datafiles/ilorin_cluster_classification.csv") %>% filter(classification !="rural") %>% 
   group_by(classification, Codes) %>% 
   summarise(total = n()) 
 
@@ -27,10 +27,10 @@ ggplot(
   )
 ) +
   geom_text_wordcloud() +
-  scale_color_discrete(drop=FALSE, type = palettes)+
+  scale_color_manual(name ="", values = c("#7f3f98", "#f69283", "#93325a"))+
   scale_size_area() +
   theme_minimal()
-
+ggsave(paste0(projectpath, "/", Sys.Date(), '_word_cloud.pdf'), width=8, height=11)
 
 
 
