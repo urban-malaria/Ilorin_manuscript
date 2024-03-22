@@ -1,5 +1,4 @@
-# ITN De-prioritization Algorithm for Malaria Control in Ilorin, Nigeria
-
+# ITN De-prioritization Algorithm for Malaria Control in Ilorin, Nigeria  <a href="https://zenodo.org/doi/10.5281/zenodo.10854716"><img src="https://zenodo.org/badge/718266745.svg" alt="DOI"></a>
 ## Overview
 This repository contains the code and documentation for the algorithm used to guide the targeted de-prioritization of insecticide-treated nets (ITNs) in urban areas of Ilorin, Nigeria. This initiative, a collaboration between the World Health Organization (WHO) and the National Malaria Elimination Programme (NMEP), aims to tailor malaria interventions and optimize resource allocation based on local malaria transmission patterns and resource availability.
 
