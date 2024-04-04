@@ -44,10 +44,7 @@ ilorin_shapefile <- sf::read_sf(file.path(IlorinDir, "Ilorin_shape_files", "ward
                       ifelse(LGACode == 24007, "Ilorin South",
                              "Ilorin West")))
 
-
-# ward_lga <- ilorin_shapefile %>%
-#   select(LGA, WardName) %>%
-#   sf::st_drop_geometry()
+ilorin_LGA <- sf::read_sf(file.path(IlorinDir, "Ilorin_shape_files", "LGA", "Illorin_metro_LGA.shp"))
 
 map_theme <- function(){
   theme(axis.text.x = ggplot2::element_blank(),

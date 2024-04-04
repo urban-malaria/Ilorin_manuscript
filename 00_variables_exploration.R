@@ -129,11 +129,6 @@ p1=ggplot()+
   labs(subtitle='', fill = "", y = "", x = "")+
   map_theme()
 
-p2 = ggplot()+
-  geom_freqpoly(data =  plotting_v2 %>% filter(grp == "Poor"), aes(x = proportion_settlement_type_grp), binwidth = 0.03, color = "#999abe", size = 1)+
-  theme_manuscript()+
-  labs(title = "Proportion of poor settlement type", x = NULL)+
-  theme(panel.border = element_blank())
 
 
 p3 = ggplot(data =  plotting_v2 %>% filter(grp == "Poor"), aes(x = proportion_settlement_type_grp))+
