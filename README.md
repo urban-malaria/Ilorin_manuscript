@@ -13,9 +13,9 @@ A mixed-methods approach was employed to identify communities in Ilorin where IT
 - `/Shiny_app`: code for the shiny app developed by Laurette Mhlanga, Postdoctoral Fellow at the Urban Malaria Project Team to support the NMEP in developing new deprioritization frameworks for other Nigerian cities.
 
 ## Methodology
-1. **Secondary Data Analysis**: The algorithm starts with an analysis of secondary data to score and rank wards according to their malaria risk.
-2. **Multistakeholder Dialogue (MSD)**: The MSD validates the algorithmic findings and collaboratively identifies potential wards for ITN de-prioritization.
-3. **Field Assessment**: A comprehensive field assessment in selected wards, focusing on settlement type heterogeneities to inform final decisions.
+1. **Rank wards by level of malaria risk**: The algorithm starts with an analysis of secondary data to score and rank wards according to their malaria risk.
+2. **Validate and codesign with the community**: The MSD validates the findings from #1 and collaboratively identifies potential wards for ITN de-prioritization.
+3. **Classify communities and select deprioritized areas**: A comprehensive field assessment in selected wards, focusing on classifying communities into formal settlements, informal settlements and slums to inform selection of those to excluded during the campaign.
 
 ## Key Findings
 The MSD corroborated the algorithmic findings, highlighting Are 2 and Akanbi 4 as potential wards for ITN de-prioritization.
