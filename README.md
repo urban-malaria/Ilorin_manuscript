@@ -1,6 +1,6 @@
 # Coproduction of a mixed-method framework for the deprioritization of communities during insecticide-treated bed net mass campaigns in Kwara Nigeria  <a href="https://zenodo.org/doi/10.5281/zenodo.10854716"><img src="https://zenodo.org/badge/718266745.svg" alt="DOI"></a>
 ## Overview
-This repository contains the code and documentation for the algorithm used to guide the targeted de-prioritization of insecticide-treated nets (ITNs) in urban areas of Ilorin, Nigeria. This initiative was a collaboration between the Loyola University Chicago, the University of Ibadan, the World Health Organization and Nigeria's National Malaria Elimination Programme (NMEP). Due to funding limitations, the NMEP aimed to identify the least vulnerable communities for malaria and exclude them during the 2023 Bednet mass campign.
+This repository contains the code and documentation for the algorithm used to guide the targeted de-prioritization of insecticide-treated nets (ITNs) in urban areas of Ilorin, Nigeria. This initiative was a collaboration between the Loyola University Chicago, the University of Ibadan, the World Health Organization (WHO) and Nigeria's National Malaria Elimination Programme (NMEP). Due to funding limitations, the NMEP aimed to identify the least vulnerable communities for malaria and exclude them during the 2023 Bednet mass campign.
 
 ## Background
 A mixed-methods approach was employed to identify communities in Ilorin where ITN distribution could be scaled back. This approach integrates quantitative analysis with local insights and field evaluations, ensuring a strategic framework for ITN de-prioritization and a judicious allocation of interventions.
@@ -31,7 +31,7 @@ Contributions to this repository are welcome. Please read our `CONTRIBUTING.md` 
 This project is licensed under the `MIT License`. See the `LICENSE` file for more details.
 
 ## Contact
-For any inquiries or contributions, please contact: laurette@aims.ac.tz
+For any inquiries or contributions, please contact: Ifeoma Ozodiegwu, Assistant Professor @ Loyola University and Principal Investigator at the Urban Malaria Project via iozodiegwu@luc.edu 
 
 ## Acknowledgments
-Special thanks to the WHO, NMEP, and all stakeholders involved in the Multistakeholder-Dialogue and field assessments.
+Special thanks to the WHO, NMEP, the Kwara State Malaria Eliminiation Program and Ministry of Health, and all stakeholders involved in the Multistakeholder-Dialogue and field assessments.
