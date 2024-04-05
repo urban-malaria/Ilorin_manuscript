@@ -1,9 +1,9 @@
-# ITN De-prioritization Algorithm for Malaria Control in Ilorin, Nigeria  <a href="https://zenodo.org/doi/10.5281/zenodo.10854716"><img src="https://zenodo.org/badge/718266745.svg" alt="DOI"></a>
+# Coproduction of a mixed-method framework for the deprioritization of communities during insecticide-treated bed net mass campaigns in Kwara Nigeria  <a href="https://zenodo.org/doi/10.5281/zenodo.10854716"><img src="https://zenodo.org/badge/718266745.svg" alt="DOI"></a>
 ## Overview
-This repository contains the code and documentation for the algorithm used to guide the targeted de-prioritization of insecticide-treated nets (ITNs) in urban areas of Ilorin, Nigeria. This initiative, a collaboration between the World Health Organization (WHO) and the National Malaria Elimination Programme (NMEP), aims to tailor malaria interventions and optimize resource allocation based on local malaria transmission patterns and resource availability.
+This repository contains the code and documentation for the algorithm used to guide the targeted de-prioritization of insecticide-treated nets (ITNs) in urban areas of Ilorin, Nigeria. This initiative was a collaboration between the Loyola University Chicago, the University of Ibadan, the World Health Organization and the National Malaria Elimination Programme (NMEP). Due to funding limitations, the NMEP aimed to identify the least vulnerable communities for malaria and exclude them during the 2023 Bednet mass campign.
 
 ## Background
-In the context of varying malaria transmission patterns and resource scarcity, a one-size-fits-all strategy is ineffective. Therefore, a mixed-methods approach was employed to identify communities in Ilorin where ITN distribution could be scaled back. This approach integrates quantitative analysis with local insights and field evaluations, ensuring a strategic framework for ITN de-prioritization and a judicious allocation of interventions.
+A mixed-methods approach was employed to identify communities in Ilorin where ITN distribution could be scaled back. This approach integrates quantitative analysis with local insights and field evaluations, ensuring a strategic framework for ITN de-prioritization and a judicious allocation of interventions.
 
 ## Repository Structure
 - `/algorithm`: contains the code for the secondary data analysis used to score and rank wards by malaria risk.
