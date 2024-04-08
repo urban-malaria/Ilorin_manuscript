@@ -205,6 +205,7 @@ ggsave(paste0(ResultDir,"/", Sys.Date(), '_ilorin_ward_pop_sizes_microplan.pdf')
 micro_plan_sum <- pop_sizes %>%  group_by(LGA) %>%  summarise(ward =n(), communities = sum(n_communities)/10, pop = sum(population)/10000) %>% 
   pivot_longer(!LGA, names_to = "category", values_to = "count")
 
+micro_plan_sum <- pop_sizes %>%  group_by(LGA) %>%  summarise(ward =n(), communities = sum(n_communities), pop = sum(population))
 
 
 theme_manuscript <- function(){
