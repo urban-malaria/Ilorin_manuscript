@@ -29,7 +29,8 @@ Contributions to this repository are welcome. Please read our `CONTRIBUTING.md` 
 This project is licensed under the `MIT License`. See the `LICENSE` file for more details.
 
 ## Contact
-For any inquiries or contributions, please contact: Ifeoma Ozodiegwu, Assistant Professor @ Loyola University and Principal Investigator at the Urban Malaria Project via iozodiegwu@luc.edu 
+For any inquiries or contributions, please contact: Ifeoma Ozodiegwu, Assistant Professor @ Loyola University and Principal Investigator at the Urban Malaria Project via iozodiegwu@luc.edu
+Specific inquires regarding the Shiny App should be addresssed to Laurette Mhlanga, Postdoctoral Fellow @ the Urban Malaria Project via lmhlanga@luc.edu
 
 ## Acknowledgments
 Special thanks to the WHO, NMEP, the Kwara State Malaria Eliminiation Program and Ministry of Health, and all stakeholders involved in the Multistakeholder-Dialogue and field assessments.
