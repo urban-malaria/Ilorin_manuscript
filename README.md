@@ -6,7 +6,7 @@ This repository contains the code and documentation for the algorithm used to gu
 A mixed-methods approach was employed to identify communities in Ilorin where ITN distribution could be scaled back. This approach integrates quantitative analysis with local insights and field evaluations, ensuring a strategic framework for ITN de-prioritization and a judicious allocation of interventions.
 
 ## Repository Structure
-- `/scripts`: contains code for the secondary data analysis used to score and rank wards by malaria risk are numbered beginning from 00 - 02. code for visualizing the themes from the multistakeholder dialogue is in the script beginning in 03. 04 contains code for generating maps used in the Multistakeholder Dialogue (MSD).
+- `/scripts`: contains code for the secondary data analysis used to score and rank wards by malaria risk are numbered beginning from 00 - 02. Code for visualizing the themes from the multistakeholder dialogue is in the script beginning in 03. 04 contains code for generating maps used in the Multistakeholder Dialogue (MSD).
 - `/datafiles`: themes from the MSD sessions and all aggregate data used in the scoring models.
 - `/Shiny_app`: code for the shiny app developed by Laurette Mhlanga, Postdoctoral Fellow at the Urban Malaria Project Team to support the NMEP in developing new deprioritization frameworks for other Nigerian cities.
 
