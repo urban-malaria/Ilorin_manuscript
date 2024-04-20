@@ -20,13 +20,7 @@ The MSD corroborated the algorithmic findings, highlighting Are 2 and Akanbi 4 a
 Field visits to 188 settlements across both wards led to the decision to focus on Are 2. Out of 73 settlements assessed here, thirteen were earmarked for ITN scale-back.
 
 ## Impact
-This mixed-methods approach provides a strategic framework for optimizing ITN de-prioritization in urban settings. It sets a precedent for addressing complex health issues through collaborative, evidence-based strategies.
-
-## Contributing
-Contributions to this repository are welcome. Please read our `CONTRIBUTING.md` file for guidelines on how to contribute.
-
-## License
-This project is licensed under the `MIT License`. See the `LICENSE` file for more details.
+This mixed-methods approach provides a strategic framework for optimizing ITN de-prioritization in urban settings. It sets a precedent for addressing complex health issues through collaborative, evidence-based approaches.
 
 ## Contact
 - For any inquiries or contributions, please contact: Ifeoma Ozodiegwu, Assistant Professor @ Loyola University and Principal Investigator at the Urban Malaria Project via iozodiegwu@luc.edu  
