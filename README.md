@@ -1,9 +1,9 @@
-# Co-design and application of a framework for the de-prioritization of communities during insecticide-treated bed net mass campaigns in Kwara, Nigeria  <a href="https://zenodo.org/doi/10.5281/zenodo.10854716"><img src="https://zenodo.org/badge/718266745.svg" alt="DOI"></a>
+# Co-creation and application of a framework for the de-prioritization of communities during insecticide-treated bed net mass campaigns for malaria prevention and control in Kwara, Nigeria  <a href="https://zenodo.org/doi/10.5281/zenodo.10854716"><img src="https://zenodo.org/badge/718266745.svg" alt="DOI"></a>
 ## Overview
 This repository contains the code and documentation for the algorithm used to guide the targeted de-prioritization of insecticide-treated nets (ITNs) in urban areas of Ilorin, Nigeria. This initiative was a collaboration between the Loyola University Chicago, the University of Ibadan, the World Health Organization (WHO) and Nigeria's National Malaria Elimination Programme (NMEP). Due to funding limitations, the NMEP aimed to identify the least vulnerable communities for malaria and exclude them during the 2023 Bednet mass campign.
 
 ## Background
-A mixed-methods approach was employed to identify communities in Ilorin where ITN distribution could be scaled back. This approach integrates quantitative analysis with local insights and field evaluations, ensuring a strategic framework for ITN de-prioritization and a judicious allocation of interventions.
+A mixed-methods approach was employed to identify communities in Ilorin that would be excluded. This approach integrates quantitative analysis with local insights and field evaluations, ensuring a strategic framework for ITN de-prioritization and a judicious allocation of interventions.
 
 ## Repository Structure
 - `/scripts`: contains code for the secondary data analysis used to score and rank wards by malaria risk are numbered beginning from 00 - 02. Code for visualizing the themes from the multistakeholder dialogue is in the script beginning in 03. 04 contains code for generating maps used in the Multistakeholder Dialogue (MSD).
